@@ -1,0 +1,16 @@
+{
+  "name": "rbx_instances",
+  "version": "1.0.0",
+  "description": "A list of ROBLOX instances and their properties/methods.",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zack Pace (Madchap32)",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "cheerio": "^1.0.0-rc.3",
+    "glob": "^7.1.6"
+  }
+}

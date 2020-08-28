@@ -1,0 +1,449 @@
+{
+    "properties": {
+        "AlwaysOnTop": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "CFrame": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "CFrame"
+        },
+        "SizeRelativeOffset": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "ZIndex": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "Adornee": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "PVInstance"
+        },
+        "Color": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "BrickColor"
+        },
+        "Color3": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Color3"
+        },
+        "Transparency": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "Visible": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "Archivable": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "ClassName": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "string"
+        },
+        "DataCost": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": true,
+            "type": "number"
+        },
+        "Name": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "string"
+        },
+        "Parent": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Instance"
+        },
+        "RobloxLocked": {
+            "replicated": true,
+            "deprecated": true,
+            "readonly": false,
+            "type": "bool"
+        },
+        "archivable": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "bool"
+        },
+        "className": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": true,
+            "type": "string"
+        }
+    },
+    "methods": {
+        "ClearAllChildren": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "Clone": {
+            "arguments": [],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "Destroy": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "FindFirstAncestor": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "FindFirstAncestorOfClass": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "FindFirstAncestorWhichIsA": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "FindFirstChild": {
+            "arguments": [
+                "string",
+                "bool"
+            ],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "FindFirstChildOfClass": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "FindFirstChildWhichIsA": {
+            "arguments": [
+                "string",
+                "bool"
+            ],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetAttribute": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "Variant",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetAttributeChangedSignal": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "RBXScriptSignal",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetAttributes": {
+            "arguments": [],
+            "returns": "table",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetChildren": {
+            "arguments": [],
+            "returns": "Objects",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetDebugId": {
+            "arguments": [
+                "number"
+            ],
+            "returns": "string",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetDescendants": {
+            "arguments": [],
+            "returns": "Array",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetFullName": {
+            "arguments": [],
+            "returns": "string",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetPropertyChangedSignal": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "RBXScriptSignal",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "IsA": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "bool",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "IsAncestorOf": {
+            "arguments": [
+                "Instance"
+            ],
+            "returns": "bool",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "IsDescendantOf": {
+            "arguments": [
+                "Instance"
+            ],
+            "returns": "bool",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "Remove": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "SetAttribute": {
+            "arguments": [
+                "string",
+                "Variant"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "WaitForChild": {
+            "arguments": [
+                "string",
+                "double"
+            ],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "children": {
+            "arguments": [],
+            "returns": "Objects",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "clone": {
+            "arguments": [],
+            "returns": "Instance",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "destroy": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "findFirstChild": {
+            "arguments": [
+                "string",
+                "bool"
+            ],
+            "returns": "Instance",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "getChildren": {
+            "arguments": [],
+            "returns": "Objects",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "isA": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "bool",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "isDescendantOf": {
+            "arguments": [
+                "Instance"
+            ],
+            "returns": "bool",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "remove": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        }
+    },
+    "events": {
+        "MouseButton1Down": {
+            "arguments": [],
+            "deprecated": false,
+            "replicated": true
+        },
+        "MouseButton1Up": {
+            "arguments": [],
+            "deprecated": false,
+            "replicated": true
+        },
+        "MouseEnter": {
+            "arguments": [],
+            "deprecated": false,
+            "replicated": true
+        },
+        "MouseLeave": {
+            "arguments": [],
+            "deprecated": false,
+            "replicated": true
+        },
+        "AncestryChanged": {
+            "arguments": [
+                "Instance",
+                "Instance"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "AttributeChanged": {
+            "arguments": [
+                "string"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "Changed": {
+            "arguments": [
+                "string"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "ChildAdded": {
+            "arguments": [
+                "Instance"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "ChildRemoved": {
+            "arguments": [
+                "Instance"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "DescendantAdded": {
+            "arguments": [
+                "Instance"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "DescendantRemoving": {
+            "arguments": [
+                "Instance"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "childAdded": {
+            "arguments": [
+                "Instance"
+            ],
+            "deprecated": true,
+            "replicated": true
+        }
+    },
+    "service": false,
+    "browsable": true,
+    "creatable": false,
+    "name": "HandleAdornment"
+}

@@ -1,0 +1,139 @@
+{
+    "properties": {
+        "AdditionalCoreIncludeDirs": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "string"
+        },
+        "BubbleChatLifetime": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "BubbleChatMaxBubbles": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "ChatHistory": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "ChatScrollLength": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "CollisionSoundEnabled": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "bool"
+        },
+        "CollisionSoundVolume": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "number"
+        },
+        "HardwareMouse": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "MaxCollisionSounds": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "number"
+        },
+        "OverrideStarterScript": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "string"
+        },
+        "ReportAbuseChatHistory": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "SoftwareSound": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "VideoCaptureEnabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "VideoQuality": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "VideoQualitySettings"
+        },
+        "Archivable": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "ClassName": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "string"
+        },
+        "DataCost": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": true,
+            "type": "number"
+        },
+        "Name": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "string"
+        },
+        "Parent": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Instance"
+        },
+        "RobloxLocked": {
+            "replicated": true,
+            "deprecated": true,
+            "readonly": false,
+            "type": "bool"
+        },
+        "archivable": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "bool"
+        },
+        "className": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": true,
+            "type": "string"
+        }
+    },
+    "methods": {},
+    "events": {},
+    "name": "GameSettings"
+}

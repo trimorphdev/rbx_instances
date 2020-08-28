@@ -1,0 +1,1056 @@
+{
+    "Beam": {
+        "name": "Beam",
+        "properties": {
+            "Attachment0": {
+                "readonly": false,
+                "replicated": true,
+                "type": "Attachment"
+            },
+            "Attachment1": {
+                "readonly": false,
+                "replicated": true,
+                "type": "Attachment"
+            },
+            "Color": {
+                "readonly": false,
+                "replicated": true,
+                "type": "ColorSequence"
+            },
+            "CurveSize0": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "CurveSize1": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "Enabled": {
+                "readonly": false,
+                "replicated": true,
+                "type": "bool"
+            },
+            "FaceCamera": {
+                "readonly": false,
+                "replicated": true,
+                "type": "bool"
+            },
+            "LightEmission": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "LightInfluence": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "Segments": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "Texture": {
+                "readonly": false,
+                "replicated": true,
+                "type": "Content"
+            },
+            "TextureLength": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "TextureMode": {
+                "readonly": false,
+                "replicated": true,
+                "type": "TextureMode"
+            },
+            "TextureSpeed": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "Transparency": {
+                "readonly": false,
+                "replicated": true,
+                "type": "NumberSequence"
+            },
+            "Width0": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "Width1": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "ZOffset": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            }
+        },
+        "methods": {
+            "SetTextureOffset": {
+                "arguments": [
+                    "number"
+                ],
+                "returns": "void"
+            }
+        },
+        "events": [],
+        "browsable": true,
+        "constructable": true,
+        "service": false,
+        "replicated": true,
+        "extends": "Instance"
+    },
+    "BodyMover": {
+        "name": "BodyMover",
+        "properties": {},
+        "methods": {},
+        "events": [],
+        "browsable": true,
+        "constructable": false,
+        "service": false,
+        "replicated": true,
+        "extends": "Instance"
+    },
+    "BodyAngularVelocity": {
+        "name": "BodyAngularVelocity",
+        "properties": {
+            "AngularVelocity": {
+                "readonly": false,
+                "replicated": true,
+                "type": "Vector3"
+            },
+            "MaxTorque": {
+                "readonly": false,
+                "replicated": true,
+                "type": "Vector3"
+            },
+            "P": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            }
+        },
+        "methods": {},
+        "events": [],
+        "browsable": true,
+        "constructable": true,
+        "service": false,
+        "replicated": true,
+        "extends": "BodyMover"
+    },
+    "BodyForce": {
+        "name": "BodyForce",
+        "properties": {
+            "Force": {
+                "readonly": false,
+                "replicated": true,
+                "type": "Vector3"
+            }
+        },
+        "methods": {},
+        "events": [],
+        "browsable": true,
+        "constructable": true,
+        "service": false,
+        "replicated": true,
+        "extends": "BodyMover"
+    },
+    "BodyGyro": {
+        "name": "BodyGyro",
+        "properties": {
+            "CFrame": {
+                "readonly": false,
+                "replicated": true,
+                "type": "CFrame"
+            },
+            "D": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "MaxTorque": {
+                "readonly": false,
+                "replicated": true,
+                "type": "Vector3"
+            },
+            "P": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            }
+        },
+        "methods": {},
+        "events": {
+            "ReachedTarget": []
+        },
+        "browsable": true,
+        "constructable": true,
+        "service": false,
+        "replicated": true,
+        "extends": "BodyMover"
+    },
+    "BodyPosition": {
+        "name": "BodyPosition",
+        "properties": {
+            "D": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "MaxForce": {
+                "readonly": false,
+                "replicated": true,
+                "type": "Vector3"
+            },
+            "P": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "Position": {
+                "readonly": false,
+                "replicated": true,
+                "type": "Vector3"
+            }
+        },
+        "methods": {
+            "GetLastForce": {
+                "returns": "Vector3",
+                "arguments": []
+            }
+        },
+        "events": {
+            "ReachedTarget": []
+        },
+        "browsable": true,
+        "constructable": true,
+        "service": false,
+        "replicated": true,
+        "extends": "BodyMover"
+    },
+    "BodyThrust": {
+        "name": "BodyThrust",
+        "properties": {
+            "Force": {
+                "readonly": false,
+                "replicated": true,
+                "type": "Vector3"
+            },
+            "D": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "MaxTorque": {
+                "readonly": false,
+                "replicated": true,
+                "type": "Vector3"
+            },
+            "P": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            }
+        },
+        "methods": {},
+        "events": [],
+        "browsable": true,
+        "constructable": true,
+        "service": false,
+        "replicated": true,
+        "extends": "BodyMover"
+    },
+    "BodyVelocity": {
+        "name": "BodyVelocity",
+        "properties": {
+            "MaxForce": {
+                "readonly": false,
+                "replicated": true,
+                "type": "Vector3"
+            },
+            "P": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "Velocity": {
+                "readonly": false,
+                "replicated": true,
+                "type": "Vector3"
+            }
+        },
+        "methods": {
+            "GetLastForce": {
+                "returns": "Vector3",
+                "arguments": []
+            },
+            "lastForce": {
+                "returns": "Vector3",
+                "arguments": []
+            }
+        },
+        "events": [],
+        "browsable": true,
+        "constructable": true,
+        "service": false,
+        "replicated": true,
+        "extends": "BodyMover"
+    },
+    "RocketPropulsion": {
+        "name": "RocketPropulsion",
+        "properties": {
+            "CartoonFactor": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "MaxSpeed": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "MaxThrust": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "MaxTorque": {
+                "readonly": false,
+                "replicated": true,
+                "type": "Vector3"
+            },
+            "Target": {
+                "readonly": false,
+                "replicated": true,
+                "type": "BasePart"
+            },
+            "TargetOffset": {
+                "readonly": false,
+                "replicated": true,
+                "type": "Vector3"
+            },
+            "ThrustD": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "ThrustP": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "TurnD": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "TurnP": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            }
+        },
+        "methods": {
+            "Abort": {
+                "returns": "void",
+                "arguments": []
+            },
+            "Fire": {
+                "returns": "void",
+                "arguments": []
+            }
+        },
+        "events": {
+            "ReachedTarget": []
+        },
+        "browsable": true,
+        "constructable": true,
+        "service": false,
+        "replicated": true,
+        "extends": "BodyMover"
+    },
+    "DebugSettings": {
+        "name": "DebugSettings",
+        "properties": {
+            "DataModel": {
+                "type": "number",
+                "readonly": true,
+                "replicated": false
+            },
+            "InstanceCount": {
+                "type": "number",
+                "readonly": true,
+                "replicated": false
+            },
+            "IsScriptStackTracingEnabled": {
+                "readonly": false,
+                "replicated": true,
+                "type": "bool"
+            },
+            "JobCount": {
+                "type": "int",
+                "readonly": true,
+                "replicated": false
+            },
+            "PlayerCount": {
+                "type": "int",
+                "readonly": true,
+                "replicated": false
+            },
+            "ReportSoundWarnings": {
+                "readonly": false,
+                "replicated": true,
+                "type": "bool"
+            },
+            "RobloxVersion": {
+                "type": "string",
+                "readonly": true,
+                "replicated": false
+            },
+            "TickCountPreciseOverride": {
+                "readonly": false,
+                "replicated": true,
+                "type": "TickCountSampleMethod"
+            }
+        },
+        "methods": {},
+        "events": [],
+        "browsable": false,
+        "constructable": false,
+        "service": false,
+        "replicated": true,
+        "extends": "Instance"
+    },
+    "GameSettings": {
+        "name": "GameSettings",
+        "properties": {
+            "AdditionalCoreIncludeDirs": {
+                "readonly": false,
+                "replicated": true,
+                "type": "string"
+            },
+            "BubbleChatLifetime": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "BubbleChatMaxBubbles": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "ChatHistory": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "ChatScrollLength": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "HardwareMouse": {
+                "readonly": false,
+                "replicated": true,
+                "type": "bool"
+            },
+            "OverrideStarterScript": {
+                "readonly": false,
+                "replicated": true,
+                "type": "string"
+            },
+            "ReportAbuseChatHistory": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "SoftwareSound": {
+                "readonly": false,
+                "replicated": true,
+                "type": "bool"
+            },
+            "VideoCaptureEnabled": {
+                "readonly": false,
+                "replicated": true,
+                "type": "bool"
+            },
+            "VideoQuality": {
+                "readonly": false,
+                "replicated": true,
+                "type": "VideoQualitySettings"
+            }
+        },
+        "methods": {},
+        "events": [],
+        "browsable": false,
+        "constructable": false,
+        "service": false,
+        "replicated": true,
+        "extends": "Instance"
+    },
+    "GuiService": {
+        "name": "GuiService",
+        "properties": {
+            "AutoSelectGuiEnabled": {
+                "readonly": false,
+                "replicated": true,
+                "type": "bool"
+            },
+            "CoreGuiNavigationEnabled": {
+                "readonly": false,
+                "replicated": true,
+                "type": "bool"
+            },
+            "GuiNavigationEnabled": {
+                "readonly": false,
+                "replicated": true,
+                "type": "bool"
+            },
+            "MenuIsOpen": {
+                "readonly": false,
+                "replicated": true,
+                "type": "bool"
+            },
+            "SelectedObject": {
+                "readonly": false,
+                "replicated": true,
+                "type": "GuiObject"
+            }
+        },
+        "methods": {
+            "AddSelectionParent": {
+                "arguments": [
+                    "string",
+                    "Instance"
+                ],
+                "returns": "void"
+            },
+            "AddSelectionTuple": {
+                "arguments": [
+                    "string",
+                    "selections"
+                ],
+                "returns": "void"
+            },
+            "CloseInspectMenu": {
+                "returns": "void",
+                "arguments": []
+            },
+            "GetEmotesMenuOpen": {
+                "returns": "bool",
+                "arguments": []
+            },
+            "GetGameplayPausedNotificationEnabled": {
+                "returns": "bool",
+                "arguments": []
+            },
+            "GetGuiInset": {
+                "returns": "Tuple",
+                "arguments": []
+            },
+            "GetInspectMenuEnabled": {
+                "returns": "bool",
+                "arguments": []
+            },
+            "InspectPlayerFromHumanoidDescription": {
+                "arguments": [
+                    "Instance",
+                    "string"
+                ],
+                "returns": "void"
+            },
+            "InspectPlayerFromUserId": {
+                "arguments": [
+                    "number"
+                ],
+                "returns": "void"
+            },
+            "IsTenFootInterface": {
+                "returns": "bool",
+                "arguments": []
+            },
+            "RemoveSelectionGroup": {
+                "arguments": [
+                    "string"
+                ],
+                "returns": "void"
+            },
+            "SetEmotesMenuOpen": {
+                "arguments": [
+                    "bool"
+                ],
+                "returns": "void"
+            },
+            "SetGameplayPausedNotificationEnabled": {
+                "arguments": [
+                    "bool"
+                ],
+                "returns": "void"
+            },
+            "SetInspectMenuEnabled": {
+                "arguments": [
+                    "bool"
+                ],
+                "returns": "void"
+            },
+            "SetUiMessage": {
+                "arguments": [
+                    "UiMessageType",
+                    "string"
+                ],
+                "returns": "void"
+            }
+        },
+        "events": {
+            "MenuClosed": [],
+            "MenuOpened": []
+        },
+        "browsable": true,
+        "constructable": true,
+        "service": true,
+        "replicated": false,
+        "extends": "Instance"
+    },
+    "HttpRbxApiService": {
+        "name": "HttpRbxApiService",
+        "properties": {},
+        "methods": {
+            "RequestLimitedAsync": {
+                "arguments": [
+                    "table",
+                    "ThrottlingPriority",
+                    "HttpContentType",
+                    "HttpRequestType"
+                ],
+                "returns": "string"
+            }
+        },
+        "events": [],
+        "browsable": true,
+        "constructable": true,
+        "service": true,
+        "replicated": true,
+        "extends": "Instance"
+    },
+    "Instance": {
+        "name": "Instance",
+        "properties": {
+            "Archivable": {
+                "readonly": false,
+                "replicated": true,
+                "type": "bool"
+            },
+            "ClassName": {
+                "type": "string",
+                "readonly": true,
+                "replicated": false
+            },
+            "Name": {
+                "readonly": false,
+                "replicated": true,
+                "type": "string"
+            },
+            "Parent": {
+                "readonly": false,
+                "replicated": true,
+                "type": "Instance"
+            }
+        },
+        "methods": {
+            "ClearAllChildren": {
+                "returns": "void",
+                "arguments": []
+            },
+            "Clone": {
+                "returns": "Instance",
+                "arguments": []
+            },
+            "Destroy": {
+                "returns": "void",
+                "arguments": []
+            },
+            "FindFirstAncestor": {
+                "arguments": [
+                    "string"
+                ],
+                "returns": "Instance"
+            },
+            "FindFirstAncestorOfClass": {
+                "arguments": [
+                    "string"
+                ],
+                "returns": "Instance"
+            },
+            "FindFirstAncestorWhichIsA": {
+                "arguments": [
+                    "string"
+                ],
+                "returns": "Instance"
+            },
+            "FindFirstChild": {
+                "arguments": [
+                    "string"
+                ],
+                "returns": "Instance"
+            },
+            "FindFirstChildOfClass": {
+                "arguments": [
+                    "string"
+                ],
+                "returns": "Instance"
+            },
+            "FindFirstChildWhichIsA": {
+                "arguments": [
+                    "string"
+                ],
+                "returns": "Instance"
+            },
+            "GetAttribute": {
+                "arguments": [
+                    "string"
+                ],
+                "returns": "Variant"
+            },
+            "GetAttributeChangedSignal": {
+                "arguments": [
+                    "string"
+                ],
+                "returns": "RBXScriptSignal"
+            },
+            "GetAttributes": {
+                "returns": "table",
+                "arguments": []
+            },
+            "GetChildren": {
+                "returns": "table",
+                "arguments": []
+            },
+            "GetDebugId": {
+                "arguments": [
+                    "number"
+                ],
+                "returns": "string"
+            },
+            "GetDescendants": {
+                "returns": "table",
+                "arguments": []
+            },
+            "GetFullName": {
+                "returns": "string",
+                "arguments": []
+            },
+            "GetPropertyChangedSignal": {
+                "arguments": [
+                    "string"
+                ],
+                "returns": "RBXScriptSignal"
+            },
+            "IsA": {
+                "arguments": [
+                    "string"
+                ],
+                "returns": "bool"
+            },
+            "IsAncestorOf": {
+                "arguments": [
+                    "Instance"
+                ],
+                "returns": "bool"
+            },
+            "IsDescendantOf": {
+                "arguments": [
+                    "Instance"
+                ],
+                "returns": "bool"
+            },
+            "SetAttribute": {
+                "arguments": [
+                    "string",
+                    "Variant"
+                ],
+                "returns": "void"
+            },
+            "WaitForChild": {
+                "arguments": [
+                    "string",
+                    "number"
+                ],
+                "returns": "Instance"
+            }
+        },
+        "events": {
+            "AncestryChanged": [
+                "Instance",
+                "Instance"
+            ],
+            "AttributeChanged": [
+                "string"
+            ],
+            "Changed": [
+                "string"
+            ],
+            "ChildAdded": [
+                "Instance"
+            ],
+            "ChildRemoved": [
+                "Instance"
+            ],
+            "DescendantAdded": [
+                "Instance"
+            ],
+            "DescendantRemoving": [
+                "Instance"
+            ]
+        },
+        "browsable": false,
+        "constructable": false,
+        "service": false,
+        "replicated": true,
+        "extends": null
+    },
+    "Lighting": {
+        "name": "Lighting",
+        "properties": {
+            "Ambient": {
+                "readonly": false,
+                "replicated": true,
+                "type": "Color3"
+            },
+            "Brightness": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "ClockTime": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "ColorShift_Bottom": {
+                "readonly": false,
+                "replicated": true,
+                "type": "Color3"
+            },
+            "ColorShit_Top": {
+                "readonly": false,
+                "replicated": true,
+                "type": "Color3"
+            },
+            "EnvironmentDiffuseScale": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "EnvironmentSpecularScale": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "ExposureCompensation": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "FogColor": {
+                "readonly": false,
+                "replicated": true,
+                "type": "Color3"
+            },
+            "FogEnd": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "FogStart": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "GeographicLatitude": {
+                "readonly": false,
+                "replicated": true,
+                "type": "number"
+            },
+            "GlobalShadows": {
+                "readonly": false,
+                "replicated": true,
+                "type": "bool"
+            },
+            "OutdoorAmbient": {
+                "readonly": false,
+                "replicated": true,
+                "type": "Color3"
+            },
+            "ShadowSoftness": {
+                "readonly": false,
+                "replicated": true,
+                "type": "float"
+            },
+            "Technology": {
+                "readonly": false,
+                "replicated": true,
+                "type": "Technology"
+            },
+            "TimeOfDay": {
+                "readonly": false,
+                "replicated": true,
+                "type": "string"
+            }
+        },
+        "methods": {
+            "GetMinutesAfterMidnight": {
+                "returns": "number",
+                "arguments": []
+            },
+            "GetMoonDirection": {
+                "returns": "Vector3",
+                "arguments": []
+            },
+            "GetMoonPhase": {
+                "returns": "number",
+                "arguments": []
+            },
+            "GetSunDirection": {
+                "returns": "Vector3",
+                "arguments": []
+            },
+            "SetMinutesAfterMidnight": {
+                "arguments": [
+                    "number"
+                ],
+                "returns": "void"
+            }
+        },
+        "events": {
+            "LightingChanged": [
+                "bool"
+            ]
+        },
+        "browsable": true,
+        "constructable": true,
+        "service": true,
+        "replicated": true,
+        "extends": "Instance"
+    },
+    "NotificationService": {
+        "name": "NotificationService",
+        "properties": {},
+        "methods": {
+            "CancelAllNotification": {
+                "arguments": [
+                    "int"
+                ],
+                "returns": "void"
+            },
+            "CancelNotification": {
+                "arguments": [
+                    "int",
+                    "int"
+                ],
+                "returns": "void"
+            },
+            "GetScheduledNotifications": {
+                "arguments": [
+                    "int"
+                ],
+                "returns": "void"
+            },
+            "ScheduleNotification": {
+                "arguments": [
+                    "int",
+                    "int",
+                    "string",
+                    "int"
+                ],
+                "returns": "void"
+            }
+        },
+        "events": {
+            "Roblox17sConnectionChanged": [
+                "string",
+                "ConnectionState",
+                "string"
+            ],
+            "Roblox17sEventReceived": [
+                "table"
+            ]
+        },
+        "browsable": true,
+        "constructable": true,
+        "service": true,
+        "replicated": true,
+        "extends": "Instance"
+    },
+    "Translator": {
+        "name": "Translator",
+        "properties": {
+            "LocaleId": {
+                "readonly": false,
+                "replicated": true,
+                "type": "string"
+            }
+        },
+        "methods": {
+            "FormatByKey": {
+                "arguments": [
+                    "string",
+                    "Variant"
+                ],
+                "returns": "string"
+            },
+            "Translate": {
+                "arguments": [
+                    "Instance",
+                    "string"
+                ],
+                "returns": "string"
+            }
+        },
+        "events": [],
+        "browsable": true,
+        "constructable": false,
+        "service": false,
+        "replicated": false,
+        "extends": "Instance"
+    },
+    "WeldConstraint": {
+        "name": "WeldConstraint",
+        "properties": {
+            "Active": {
+                "readonly": false,
+                "replicated": true,
+                "type": "bool"
+            },
+            "Enabled": {
+                "readonly": false,
+                "replicated": true,
+                "type": "bool"
+            },
+            "Part0": {
+                "readonly": false,
+                "replicated": true,
+                "type": "BasePart"
+            },
+            "Part1": {
+                "readonly": false,
+                "replicated": true,
+                "type": "BasePart"
+            }
+        },
+        "methods": {},
+        "events": [],
+        "browsable": true,
+        "constructable": true,
+        "service": false,
+        "replicated": true,
+        "extends": "Instance"
+    }
+}
