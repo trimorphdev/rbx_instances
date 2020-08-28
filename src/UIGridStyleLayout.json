@@ -1,5 +1,35 @@
 {
     "properties": {
+        "AbsoluteContentSize": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "Vector2"
+        },
+        "FillDirection": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "FillDirection"
+        },
+        "HorizontalAlignment": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "HorizontalAlignment"
+        },
+        "SortOrder": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "SortOrder"
+        },
+        "VerticalAlignment": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "VerticalAlignment"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +80,22 @@
         }
     },
     "methods": {
+        "ApplyLayout": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "SetCustomSortFunction": {
+            "arguments": [
+                "Function"
+            ],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -371,5 +417,5 @@
     "service": false,
     "browsable": false,
     "creatable": false,
-    "name": "Instance"
+    "name": "UIGridStyleLayout"
 }

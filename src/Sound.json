@@ -1,5 +1,119 @@
 {
     "properties": {
+        "EmitterSize": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "IsLoaded": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "bool"
+        },
+        "IsPaused": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "bool"
+        },
+        "IsPlaying": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "bool"
+        },
+        "Looped": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "MaxDistance": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "MinDistance": {
+            "replicated": true,
+            "deprecated": true,
+            "readonly": false,
+            "type": "number"
+        },
+        "Pitch": {
+            "replicated": true,
+            "deprecated": true,
+            "readonly": false,
+            "type": "number"
+        },
+        "PlayOnRemove": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "PlaybackLoudness": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "double"
+        },
+        "PlaybackSpeed": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "Playing": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "RollOffMode": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "RollOffMode"
+        },
+        "SoundGroup": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "SoundGroup"
+        },
+        "SoundId": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Content"
+        },
+        "TimeLength": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "double"
+        },
+        "TimePosition": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "double"
+        },
+        "Volume": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "isPlaying": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": true,
+            "type": "bool"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +164,55 @@
         }
     },
     "methods": {
+        "Pause": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "Play": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "Resume": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "Stop": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "pause": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "play": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "stop": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -310,6 +473,56 @@
         }
     },
     "events": {
+        "DidLoop": {
+            "arguments": [
+                "string",
+                "number"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "Ended": {
+            "arguments": [
+                "string"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "Loaded": {
+            "arguments": [
+                "string"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "Paused": {
+            "arguments": [
+                "string"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "Played": {
+            "arguments": [
+                "string"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "Resumed": {
+            "arguments": [
+                "string"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "Stopped": {
+            "arguments": [
+                "string"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
         "AncestryChanged": {
             "arguments": [
                 "Instance",
@@ -369,7 +582,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "Sound"
 }

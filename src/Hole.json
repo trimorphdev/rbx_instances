@@ -1,5 +1,29 @@
 {
     "properties": {
+        "FaceId": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "NormalId"
+        },
+        "InOut": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "InOut"
+        },
+        "LeftRight": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "LeftRight"
+        },
+        "TopBottom": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "TopBottom"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -369,7 +393,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "Hole"
 }

@@ -1,5 +1,83 @@
 {
     "properties": {
+        "Axis": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "CFrame": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "CFrame"
+        },
+        "Orientation": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "Position": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "Rotation": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "SecondaryAxis": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "Visible": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "WorldAxis": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "WorldCFrame": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "CFrame"
+        },
+        "WorldOrientation": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "WorldPosition": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "WorldRotation": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": true,
+            "type": "Vector3"
+        },
+        "WorldSecondaryAxis": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +128,38 @@
         }
     },
     "methods": {
+        "GetAxis": {
+            "arguments": [],
+            "returns": "Vector3",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "GetSecondaryAxis": {
+            "arguments": [],
+            "returns": "Vector3",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "SetAxis": {
+            "arguments": [
+                "Vector3"
+            ],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "SetSecondaryAxis": {
+            "arguments": [
+                "Vector3"
+            ],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -369,7 +479,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "Attachment"
 }

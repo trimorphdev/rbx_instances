@@ -1,5 +1,95 @@
 {
     "properties": {
+        "Attachment0": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Attachment"
+        },
+        "Attachment1": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Attachment"
+        },
+        "Color": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "ColorSequence"
+        },
+        "Enabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "FaceCamera": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "Lifetime": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "LightEmission": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "LightInfluence": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "MaxLength": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "MinLength": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "Texture": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Content"
+        },
+        "TextureLength": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "TextureMode": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "TextureMode"
+        },
+        "Transparency": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "NumberSequence"
+        },
+        "WidthScale": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "NumberSequence"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +140,13 @@
         }
     },
     "methods": {
+        "Clear": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -369,7 +466,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "Trail"
 }

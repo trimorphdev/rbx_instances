@@ -1,5 +1,71 @@
 {
     "properties": {
+        "F0": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "F1": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "F2": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "F3": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "Active": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "bool"
+        },
+        "C0": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "CFrame"
+        },
+        "C1": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "CFrame"
+        },
+        "Enabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "Part0": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "BasePart"
+        },
+        "Part1": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "BasePart"
+        },
+        "part1": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "BasePart"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -369,7 +435,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "Glue"
 }

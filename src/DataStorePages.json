@@ -1,5 +1,11 @@
 {
     "properties": {
+        "IsFinished": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "bool"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +56,20 @@
         }
     },
     "methods": {
+        "AdvanceToNextPageAsync": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetCurrentPage": {
+            "arguments": [],
+            "returns": "Array",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -369,7 +389,7 @@
         }
     },
     "service": false,
-    "browsable": false,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "DataStorePages"
 }

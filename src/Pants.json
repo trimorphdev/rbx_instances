@@ -1,5 +1,17 @@
 {
     "properties": {
+        "PantsTemplate": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Content"
+        },
+        "Color3": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Color3"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -369,7 +381,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "Pants"
 }

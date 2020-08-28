@@ -50,6 +50,25 @@
         }
     },
     "methods": {
+        "InvokeClient": {
+            "arguments": [
+                "Instance",
+                "Tuple"
+            ],
+            "returns": "Tuple",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "InvokeServer": {
+            "arguments": [
+                "Tuple"
+            ],
+            "returns": "Tuple",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -369,7 +388,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "RemoteFunction"
 }

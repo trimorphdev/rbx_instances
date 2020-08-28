@@ -50,6 +50,15 @@
         }
     },
     "methods": {
+        "SetOutgoingKBPSLimit": {
+            "arguments": [
+                "number"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -371,5 +380,5 @@
     "service": false,
     "browsable": false,
     "creatable": false,
-    "name": "Instance"
+    "name": "NetworkPeer"
 }

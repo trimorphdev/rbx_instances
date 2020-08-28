@@ -1,5 +1,35 @@
 {
     "properties": {
+        "AngularVelocity": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "MaxTorque": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "P": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "angularvelocity": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "maxTorque": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "Vector3"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -369,7 +399,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "BodyAngularVelocity"
 }

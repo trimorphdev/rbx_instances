@@ -310,6 +310,11 @@
         }
     },
     "events": {
+        "Received": {
+            "arguments": [],
+            "deprecated": false,
+            "replicated": true
+        },
         "AncestryChanged": {
             "arguments": [
                 "Instance",
@@ -371,5 +376,5 @@
     "service": false,
     "browsable": false,
     "creatable": false,
-    "name": "Instance"
+    "name": "NetworkMarker"
 }

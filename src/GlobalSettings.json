@@ -50,6 +50,60 @@
         }
     },
     "methods": {
+        "GetFFlag": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "bool",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetFVariable": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "string",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "FindService": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetService": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "getService": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "Instance",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "service": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "Instance",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -310,6 +364,30 @@
         }
     },
     "events": {
+        "Close": {
+            "arguments": [],
+            "deprecated": false,
+            "replicated": true
+        },
+        "CloseLate": {
+            "arguments": [],
+            "deprecated": false,
+            "replicated": true
+        },
+        "ServiceAdded": {
+            "arguments": [
+                "Instance"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "ServiceRemoving": {
+            "arguments": [
+                "Instance"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
         "AncestryChanged": {
             "arguments": [
                 "Instance",
@@ -371,5 +449,5 @@
     "service": false,
     "browsable": false,
     "creatable": false,
-    "name": "Instance"
+    "name": "GlobalSettings"
 }

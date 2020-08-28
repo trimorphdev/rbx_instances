@@ -1,5 +1,77 @@
 {
     "properties": {
+        "ApplyAtCenterOfMass": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "MaxForce": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "MaxVelocity": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "ReactionForceEnabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "Responsiveness": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "RigidityEnabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "Active": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "bool"
+        },
+        "Attachment0": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Attachment"
+        },
+        "Attachment1": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Attachment"
+        },
+        "Color": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "BrickColor"
+        },
+        "Enabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "Visible": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -369,7 +441,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "AlignPosition"
 }

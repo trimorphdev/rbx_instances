@@ -1,5 +1,11 @@
 {
     "properties": {
+        "LoadStringEnabled": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -368,8 +374,8 @@
             "replicated": true
         }
     },
-    "service": false,
-    "browsable": false,
+    "service": true,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "ServerScriptService"
 }

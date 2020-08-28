@@ -1,5 +1,17 @@
 {
     "properties": {
+        "AutomaticRetry": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "LegacyNamingScheme": {
+            "replicated": true,
+            "deprecated": true,
+            "readonly": false,
+            "type": "bool"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +62,42 @@
         }
     },
     "methods": {
+        "GetDataStore": {
+            "arguments": [
+                "string",
+                "string"
+            ],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetGlobalDataStore": {
+            "arguments": [],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetOrderedDataStore": {
+            "arguments": [
+                "string",
+                "string"
+            ],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetRequestBudgetForRequestType": {
+            "arguments": [
+                "DataStoreRequestType"
+            ],
+            "returns": "number",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -368,8 +416,8 @@
             "replicated": true
         }
     },
-    "service": false,
-    "browsable": false,
+    "service": true,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "DataStoreService"
 }

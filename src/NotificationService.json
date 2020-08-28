@@ -50,6 +50,46 @@
         }
     },
     "methods": {
+        "CancelAllNotification": {
+            "arguments": [
+                "int64"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "CancelNotification": {
+            "arguments": [
+                "int64",
+                "number"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetScheduledNotifications": {
+            "arguments": [
+                "int64"
+            ],
+            "returns": "Array",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "ScheduleNotification": {
+            "arguments": [
+                "int64",
+                "number",
+                "string",
+                "number"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -310,6 +350,22 @@
         }
     },
     "events": {
+        "Roblox17sConnectionChanged": {
+            "arguments": [
+                "string",
+                "ConnectionState",
+                "string"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "Roblox17sEventReceived": {
+            "arguments": [
+                "Map"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
         "AncestryChanged": {
             "arguments": [
                 "Instance",
@@ -368,8 +424,8 @@
             "replicated": true
         }
     },
-    "service": false,
-    "browsable": false,
+    "service": true,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "NotificationService"
 }

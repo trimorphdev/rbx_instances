@@ -368,8 +368,8 @@
             "replicated": true
         }
     },
-    "service": false,
-    "browsable": false,
+    "service": true,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "MeshContentProvider"
 }

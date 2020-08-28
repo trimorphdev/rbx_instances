@@ -1,5 +1,47 @@
 {
     "properties": {
+        "Faces": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Faces"
+        },
+        "Style": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "HandlesStyle"
+        },
+        "Adornee": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "BasePart"
+        },
+        "Color": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "BrickColor"
+        },
+        "Color3": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Color3"
+        },
+        "Transparency": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "Visible": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -310,6 +352,42 @@
         }
     },
     "events": {
+        "MouseButton1Down": {
+            "arguments": [
+                "NormalId"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "MouseButton1Up": {
+            "arguments": [
+                "NormalId"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "MouseDrag": {
+            "arguments": [
+                "NormalId",
+                "number"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "MouseEnter": {
+            "arguments": [
+                "NormalId"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "MouseLeave": {
+            "arguments": [
+                "NormalId"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
         "AncestryChanged": {
             "arguments": [
                 "Instance",
@@ -369,7 +447,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "Handles"
 }

@@ -1,5 +1,53 @@
 {
     "properties": {
+        "DataModel": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "number"
+        },
+        "InstanceCount": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "number"
+        },
+        "IsScriptStackTracingEnabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "JobCount": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "number"
+        },
+        "PlayerCount": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "number"
+        },
+        "ReportSoundWarnings": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "RobloxVersion": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "string"
+        },
+        "TickCountPreciseOverride": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "TickCountSampleMethod"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -371,5 +419,5 @@
     "service": false,
     "browsable": false,
     "creatable": false,
-    "name": "Instance"
+    "name": "DebugSettings"
 }

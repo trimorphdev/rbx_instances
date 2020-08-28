@@ -1,5 +1,95 @@
 {
     "properties": {
+        "CreatorId": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "int64"
+        },
+        "CreatorType": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "CreatorType"
+        },
+        "GameId": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "int64"
+        },
+        "GearGenreSetting": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": true,
+            "type": "GearGenreSetting"
+        },
+        "Genre": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "Genre"
+        },
+        "JobId": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "string"
+        },
+        "PlaceId": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "int64"
+        },
+        "PlaceVersion": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "number"
+        },
+        "PrivateServerId": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "string"
+        },
+        "PrivateServerOwnerId": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "int64"
+        },
+        "VIPServerId": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": true,
+            "type": "string"
+        },
+        "VIPServerOwnerId": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": true,
+            "type": "int64"
+        },
+        "Workspace": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "Workspace"
+        },
+        "lighting": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": true,
+            "type": "Instance"
+        },
+        "workspace": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": true,
+            "type": "Workspace"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +140,203 @@
         }
     },
     "methods": {
+        "BindToClose": {
+            "arguments": [
+                "Function"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetEngineFeature": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "bool",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetFastFlag": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "bool",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetFastInt": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "number",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetFastString": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "string",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetJobIntervalPeakFraction": {
+            "arguments": [
+                "string",
+                "double"
+            ],
+            "returns": "double",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetJobTimePeakFraction": {
+            "arguments": [
+                "string",
+                "double"
+            ],
+            "returns": "double",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetJobsExtendedStats": {
+            "arguments": [],
+            "returns": "Array",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetJobsInfo": {
+            "arguments": [],
+            "returns": "Array",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetMessage": {
+            "arguments": [],
+            "returns": "string",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "GetObjects": {
+            "arguments": [
+                "Content"
+            ],
+            "returns": "Objects",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetRemoteBuildMode": {
+            "arguments": [],
+            "returns": "bool",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "IsGearTypeAllowed": {
+            "arguments": [
+                "GearType"
+            ],
+            "returns": "bool",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "IsLoaded": {
+            "arguments": [],
+            "returns": "bool",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "Load": {
+            "arguments": [
+                "Content"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "SavePlace": {
+            "arguments": [
+                "SaveFilter"
+            ],
+            "returns": "bool",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "SetPlaceId": {
+            "arguments": [
+                "int64"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "SetUniverseId": {
+            "arguments": [
+                "int64"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "Shutdown": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "FindService": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetService": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "getService": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "Instance",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "service": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "Instance",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -310,6 +597,55 @@
         }
     },
     "events": {
+        "AllowedGearTypeChanged": {
+            "arguments": [],
+            "deprecated": true,
+            "replicated": true
+        },
+        "GraphicsQualityChangeRequest": {
+            "arguments": [
+                "bool"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "ItemChanged": {
+            "arguments": [
+                "Instance",
+                "string"
+            ],
+            "deprecated": true,
+            "replicated": true
+        },
+        "Loaded": {
+            "arguments": [],
+            "deprecated": false,
+            "replicated": true
+        },
+        "Close": {
+            "arguments": [],
+            "deprecated": false,
+            "replicated": true
+        },
+        "CloseLate": {
+            "arguments": [],
+            "deprecated": false,
+            "replicated": true
+        },
+        "ServiceAdded": {
+            "arguments": [
+                "Instance"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "ServiceRemoving": {
+            "arguments": [
+                "Instance"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
         "AncestryChanged": {
             "arguments": [
                 "Instance",
@@ -369,7 +705,7 @@
         }
     },
     "service": false,
-    "browsable": false,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "DataModel"
 }

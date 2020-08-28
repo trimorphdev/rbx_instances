@@ -1,5 +1,17 @@
 {
     "properties": {
+        "CursorIcon": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Content"
+        },
+        "MaxActivationDistance": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -310,6 +322,41 @@
         }
     },
     "events": {
+        "MouseClick": {
+            "arguments": [
+                "Instance"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "MouseHoverEnter": {
+            "arguments": [
+                "Instance"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "MouseHoverLeave": {
+            "arguments": [
+                "Instance"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "RightMouseClick": {
+            "arguments": [
+                "Instance"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "mouseClick": {
+            "arguments": [
+                "Instance"
+            ],
+            "deprecated": true,
+            "replicated": true
+        },
         "AncestryChanged": {
             "arguments": [
                 "Instance",
@@ -369,7 +416,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "ClickDetector"
 }

@@ -1,5 +1,71 @@
 {
     "properties": {
+        "DisplayOrder": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "IgnoreGuiInset": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "Enabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "ResetOnSpawn": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "ZIndexBehavior": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "ZIndexBehavior"
+        },
+        "AbsolutePosition": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "Vector2"
+        },
+        "AbsoluteRotation": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "number"
+        },
+        "AbsoluteSize": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "Vector2"
+        },
+        "AutoLocalize": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "Localize": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "bool"
+        },
+        "RootLocalizationTable": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "LocalizationTable"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -369,7 +435,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "ScreenGui"
 }

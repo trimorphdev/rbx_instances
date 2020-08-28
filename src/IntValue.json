@@ -1,5 +1,11 @@
 {
     "properties": {
+        "Value": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "int64"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -310,6 +316,20 @@
         }
     },
     "events": {
+        "Changed": {
+            "arguments": [
+                "string"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "changed": {
+            "arguments": [
+                "int64"
+            ],
+            "deprecated": true,
+            "replicated": true
+        },
         "AncestryChanged": {
             "arguments": [
                 "Instance",
@@ -319,13 +339,6 @@
             "replicated": true
         },
         "AttributeChanged": {
-            "arguments": [
-                "string"
-            ],
-            "deprecated": false,
-            "replicated": true
-        },
-        "Changed": {
             "arguments": [
                 "string"
             ],
@@ -369,7 +382,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "IntValue"
 }

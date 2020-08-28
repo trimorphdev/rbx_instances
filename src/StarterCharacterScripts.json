@@ -369,7 +369,7 @@
         }
     },
     "service": false,
-    "browsable": false,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "StarterCharacterScripts"
 }

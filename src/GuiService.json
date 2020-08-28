@@ -1,5 +1,47 @@
 {
     "properties": {
+        "AutoSelectGuiEnabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "CoreGuiNavigationEnabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "GuiNavigationEnabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "IsModalDialog": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": true,
+            "type": "bool"
+        },
+        "IsWindows": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": true,
+            "type": "bool"
+        },
+        "MenuIsOpen": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "bool"
+        },
+        "SelectedObject": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "GuiObject"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +92,133 @@
         }
     },
     "methods": {
+        "AddSelectionParent": {
+            "arguments": [
+                "string",
+                "Instance"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "AddSelectionTuple": {
+            "arguments": [
+                "string",
+                "Tuple"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "CloseInspectMenu": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetEmotesMenuOpen": {
+            "arguments": [],
+            "returns": "bool",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetGameplayPausedNotificationEnabled": {
+            "arguments": [],
+            "returns": "bool",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetGuiInset": {
+            "arguments": [],
+            "returns": "Tuple",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetInspectMenuEnabled": {
+            "arguments": [],
+            "returns": "bool",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "InspectPlayerFromHumanoidDescription": {
+            "arguments": [
+                "Instance",
+                "string"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "InspectPlayerFromUserId": {
+            "arguments": [
+                "int64"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "IsTenFootInterface": {
+            "arguments": [],
+            "returns": "bool",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "RemoveSelectionGroup": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "SetEmotesMenuOpen": {
+            "arguments": [
+                "bool"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "SetGameplayPausedNotificationEnabled": {
+            "arguments": [
+                "bool"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "SetInspectMenuEnabled": {
+            "arguments": [
+                "bool"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "SetUiMessage": {
+            "arguments": [
+                "UiMessageType",
+                "string"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -310,6 +479,16 @@
         }
     },
     "events": {
+        "MenuClosed": {
+            "arguments": [],
+            "deprecated": false,
+            "replicated": true
+        },
+        "MenuOpened": {
+            "arguments": [],
+            "deprecated": false,
+            "replicated": true
+        },
         "AncestryChanged": {
             "arguments": [
                 "Instance",
@@ -368,8 +547,8 @@
             "replicated": true
         }
     },
-    "service": false,
-    "browsable": false,
+    "service": true,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "GuiService"
 }

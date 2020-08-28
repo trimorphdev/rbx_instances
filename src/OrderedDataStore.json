@@ -50,6 +50,76 @@
         }
     },
     "methods": {
+        "GetSortedAsync": {
+            "arguments": [
+                "bool",
+                "number",
+                "Variant",
+                "Variant"
+            ],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetAsync": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "Variant",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "IncrementAsync": {
+            "arguments": [
+                "string",
+                "number"
+            ],
+            "returns": "Variant",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "OnUpdate": {
+            "arguments": [
+                "string",
+                "Function"
+            ],
+            "returns": "RBXScriptConnection",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "RemoveAsync": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "Variant",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "SetAsync": {
+            "arguments": [
+                "string",
+                "Variant"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "UpdateAsync": {
+            "arguments": [
+                "string",
+                "Function"
+            ],
+            "returns": "Tuple",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -369,7 +439,7 @@
         }
     },
     "service": false,
-    "browsable": false,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "OrderedDataStore"
 }

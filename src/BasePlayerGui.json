@@ -50,6 +50,16 @@
         }
     },
     "methods": {
+        "GetGuiObjectsAtPosition": {
+            "arguments": [
+                "number",
+                "number"
+            ],
+            "returns": "Objects",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -369,7 +379,7 @@
         }
     },
     "service": false,
-    "browsable": false,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "BasePlayerGui"
 }

@@ -1,5 +1,59 @@
 {
     "properties": {
+        "CurrentDistance": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "number"
+        },
+        "Length": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "Thickness": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "Active": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "bool"
+        },
+        "Attachment0": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Attachment"
+        },
+        "Attachment1": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Attachment"
+        },
+        "Color": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "BrickColor"
+        },
+        "Enabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "Visible": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -369,7 +423,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "RodConstraint"
 }

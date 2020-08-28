@@ -1,5 +1,35 @@
 {
     "properties": {
+        "CFrame": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "CFrame"
+        },
+        "EasingDirection": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "PoseEasingDirection"
+        },
+        "EasingStyle": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "PoseEasingStyle"
+        },
+        "MaskWeight": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "number"
+        },
+        "Weight": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +80,31 @@
         }
     },
     "methods": {
+        "AddSubPose": {
+            "arguments": [
+                "Instance"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetSubPoses": {
+            "arguments": [],
+            "returns": "Objects",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "RemoveSubPose": {
+            "arguments": [
+                "Instance"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -369,7 +424,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "Pose"
 }

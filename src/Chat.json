@@ -1,5 +1,17 @@
 {
     "properties": {
+        "BubbleChatEnabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "LoadDefaultChat": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +62,77 @@
         }
     },
     "methods": {
+        "CanUserChatAsync": {
+            "arguments": [
+                "int64"
+            ],
+            "returns": "bool",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "CanUsersChatAsync": {
+            "arguments": [
+                "int64",
+                "int64"
+            ],
+            "returns": "bool",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "Chat": {
+            "arguments": [
+                "Instance",
+                "string",
+                "ChatColor"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "FilterStringAsync": {
+            "arguments": [
+                "string",
+                "Instance",
+                "Instance"
+            ],
+            "returns": "string",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "FilterStringForBroadcast": {
+            "arguments": [
+                "string",
+                "Instance"
+            ],
+            "returns": "string",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "FilterStringForPlayerAsync": {
+            "arguments": [
+                "string",
+                "Instance"
+            ],
+            "returns": "string",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "RegisterChatCallback": {
+            "arguments": [
+                "ChatCallbackType",
+                "Function"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -310,6 +393,15 @@
         }
     },
     "events": {
+        "Chatted": {
+            "arguments": [
+                "Instance",
+                "string",
+                "ChatColor"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
         "AncestryChanged": {
             "arguments": [
                 "Instance",
@@ -368,8 +460,8 @@
             "replicated": true
         }
     },
-    "service": false,
-    "browsable": false,
+    "service": true,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "Chat"
 }

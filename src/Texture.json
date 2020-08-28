@@ -1,5 +1,71 @@
 {
     "properties": {
+        "OffsetStudsU": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "OffsetStudsV": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "StudsPerTileU": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "StudsPerTileV": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "Color3": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Color3"
+        },
+        "LocalTransparencyModifier": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "Shiny": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "number"
+        },
+        "Specular": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "number"
+        },
+        "Texture": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Content"
+        },
+        "Transparency": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "Face": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "NormalId"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -369,7 +435,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "Texture"
 }

@@ -50,6 +50,42 @@
         }
     },
     "methods": {
+        "FindService": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetService": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "getService": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "Instance",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "service": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "Instance",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -310,6 +346,30 @@
         }
     },
     "events": {
+        "Close": {
+            "arguments": [],
+            "deprecated": false,
+            "replicated": true
+        },
+        "CloseLate": {
+            "arguments": [],
+            "deprecated": false,
+            "replicated": true
+        },
+        "ServiceAdded": {
+            "arguments": [
+                "Instance"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "ServiceRemoving": {
+            "arguments": [
+                "Instance"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
         "AncestryChanged": {
             "arguments": [
                 "Instance",
@@ -369,7 +429,7 @@
         }
     },
     "service": false,
-    "browsable": false,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "AnalysticsSettings"
 }

@@ -1,5 +1,71 @@
 {
     "properties": {
+        "Browsable": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "ClassCategory": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "string"
+        },
+        "Constraint": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "string"
+        },
+        "Deprecated": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "EditingDisabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "IsBackend": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "ScriptContext": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "string"
+        },
+        "UIMaximum": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "double"
+        },
+        "UIMinimum": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "double"
+        },
+        "UINumTicks": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "double"
+        },
+        "summary": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "string"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -369,7 +435,7 @@
         }
     },
     "service": false,
-    "browsable": false,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "ReflectionMetadataItem"
 }

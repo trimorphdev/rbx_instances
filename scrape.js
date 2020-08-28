@@ -203,7 +203,6 @@ function doUrl(url) {
 
             fs.writeFileSync(path.join(__dirname, 'src', name + '.json'), JSON.stringify(obj, null, 4));
         })
-        .catch(console.error);
 }
 
 axios('https://developer.roblox.com/en-us/api-reference/class/Instance')
@@ -213,7 +212,7 @@ axios('https://developer.roblox.com/en-us/api-reference/class/Instance')
 
         let apiItems = $('ul.multi-nested-list');
         $(apiItems).find('a').each(function() {
+            console.log('https://developer.roblox.com' + $(this).attr('href'))
             doUrl('https://developer.roblox.com' + $(this).attr('href'));
         })
     })
-    .catch(console.error);

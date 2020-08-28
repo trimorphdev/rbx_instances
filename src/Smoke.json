@@ -1,5 +1,35 @@
 {
     "properties": {
+        "Color": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Color3"
+        },
+        "Enabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "Opacity": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "RiseVelocity": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "Size": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -369,7 +399,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "Smoke"
 }

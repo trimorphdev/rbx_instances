@@ -1,5 +1,17 @@
 {
     "properties": {
+        "Root": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "Instance"
+        },
+        "SourceLocaleId": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "string"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +62,134 @@
         }
     },
     "methods": {
+        "GetEntries": {
+            "arguments": [],
+            "returns": "Array",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetString": {
+            "arguments": [
+                "string",
+                "string"
+            ],
+            "returns": "string",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "GetTranslator": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "RemoveEntry": {
+            "arguments": [
+                "string",
+                "string",
+                "string"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "RemoveEntryValue": {
+            "arguments": [
+                "string",
+                "string",
+                "string",
+                "string"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "RemoveTargetLocale": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "SetEntries": {
+            "arguments": [
+                "Variant"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "SetEntryContext": {
+            "arguments": [
+                "string",
+                "string",
+                "string",
+                "string"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "SetEntryExample": {
+            "arguments": [
+                "string",
+                "string",
+                "string",
+                "string"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "SetEntryKey": {
+            "arguments": [
+                "string",
+                "string",
+                "string",
+                "string"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "SetEntrySource": {
+            "arguments": [
+                "string",
+                "string",
+                "string",
+                "string"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "SetEntryValue": {
+            "arguments": [
+                "string",
+                "string",
+                "string",
+                "string",
+                "string"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -369,7 +509,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "LocalizationTable"
 }

@@ -1,5 +1,119 @@
 {
     "properties": {
+        "ActuatorType": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "ActuatorType"
+        },
+        "CurrentPosition": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "number"
+        },
+        "LimitsEnabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "LowerLimit": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "MotorMaxAcceleration": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "MotorMaxForce": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "Restitution": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "ServoMaxForce": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "Size": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "Speed": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "TargetPosition": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "UpperLimit": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "Velocity": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "Active": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "bool"
+        },
+        "Attachment0": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Attachment"
+        },
+        "Attachment1": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Attachment"
+        },
+        "Color": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "BrickColor"
+        },
+        "Enabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "Visible": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -369,7 +483,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "PrismaticConstraint"
 }

@@ -1,5 +1,11 @@
 {
     "properties": {
+        "Source": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Instance"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +56,13 @@
         }
     },
     "methods": {
+        "GetCurrentValue": {
+            "arguments": [],
+            "returns": "number",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -310,6 +323,27 @@
         }
     },
     "events": {
+        "EventConnected": {
+            "arguments": [
+                "Instance"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "EventDisconnected": {
+            "arguments": [
+                "Instance"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "SourceValueChanged": {
+            "arguments": [
+                "number"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
         "AncestryChanged": {
             "arguments": [
                 "Instance",
@@ -369,7 +403,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "CustomEventReceiver"
 }

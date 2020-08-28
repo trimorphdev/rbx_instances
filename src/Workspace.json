@@ -1,5 +1,89 @@
 {
     "properties": {
+        "AllowThirdPartySales": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "CurrentCamera": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Camera"
+        },
+        "DistributedGameTime": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "double"
+        },
+        "FallenPartsDestroyHeight": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "FilteringEnabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "Gravity": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "PhysicsSimulationRate": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "PhysicsSimulationRate"
+        },
+        "StreamingEnabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "StreamingMinRadius": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "StreamingPauseMode": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "StreamingPauseMode"
+        },
+        "StreamingTargetRadius": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "Terrain": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "Instance"
+        },
+        "LevelOfDetail": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "ModelLevelOfDetail"
+        },
+        "PrimaryPart": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "BasePart"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +134,198 @@
         }
     },
     "methods": {
+        "BreakJoints": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "ExperimentalSolverIsEnabled": {
+            "arguments": [],
+            "returns": "bool",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetNumAwakeParts": {
+            "arguments": [],
+            "returns": "number",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetPhysicsThrottling": {
+            "arguments": [],
+            "returns": "number",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetRealPhysicsFPS": {
+            "arguments": [],
+            "returns": "double",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "JoinToOutsiders": {
+            "arguments": [
+                "Objects",
+                "JointCreationMode"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "MakeJoints": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "PGSIsEnabled": {
+            "arguments": [],
+            "returns": "bool",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "SetPhysicsThrottleEnabled": {
+            "arguments": [
+                "bool"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "UnjoinFromOutsiders": {
+            "arguments": [
+                "Objects"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "ZoomToExtents": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetBoundingBox": {
+            "arguments": [],
+            "returns": "Tuple",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetExtentsSize": {
+            "arguments": [],
+            "returns": "Vector3",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetModelCFrame": {
+            "arguments": [],
+            "returns": "CFrame",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "GetModelSize": {
+            "arguments": [],
+            "returns": "Vector3",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "GetPrimaryPartCFrame": {
+            "arguments": [],
+            "returns": "CFrame",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "MoveTo": {
+            "arguments": [
+                "Vector3"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "ResetOrientationToIdentity": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "SetIdentityOrientation": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "SetPrimaryPartCFrame": {
+            "arguments": [
+                "CFrame"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "TranslateBy": {
+            "arguments": [
+                "Vector3"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "breakJoints": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "makeJoints": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "move": {
+            "arguments": [
+                "Vector3"
+            ],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "moveTo": {
+            "arguments": [
+                "Vector3"
+            ],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -368,8 +644,8 @@
             "replicated": true
         }
     },
-    "service": false,
-    "browsable": false,
+    "service": true,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "Workspace"
 }

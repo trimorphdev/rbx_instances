@@ -1,5 +1,125 @@
 {
     "properties": {
+        "Acceleration": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "Color": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "ColorSequence"
+        },
+        "Drag": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "EmissionDirection": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "NormalId"
+        },
+        "Enabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "Lifetime": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "NumberRange"
+        },
+        "LightEmission": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "LightInfluence": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "LockedToPart": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "Rate": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "RotSpeed": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "NumberRange"
+        },
+        "Rotation": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "NumberRange"
+        },
+        "Size": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "NumberSequence"
+        },
+        "Speed": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "NumberRange"
+        },
+        "SpreadAngle": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector2"
+        },
+        "Texture": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Content"
+        },
+        "Transparency": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "NumberSequence"
+        },
+        "VelocityInheritance": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "VelocitySpread": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "number"
+        },
+        "ZOffset": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +170,22 @@
         }
     },
     "methods": {
+        "Clear": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "Emit": {
+            "arguments": [
+                "number"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -369,7 +505,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "ParticleEmitter"
 }

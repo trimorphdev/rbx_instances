@@ -1,5 +1,23 @@
 {
     "properties": {
+        "AspectRatio": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "AspectType": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "AspectType"
+        },
+        "DominantAxis": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "DominantAxis"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -369,7 +387,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "UIAspectRatioConstraint"
 }

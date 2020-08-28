@@ -1,5 +1,17 @@
 {
     "properties": {
+        "LevelOfDetail": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "ModelLevelOfDetail"
+        },
+        "PrimaryPart": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "BasePart"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +62,128 @@
         }
     },
     "methods": {
+        "BreakJoints": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetBoundingBox": {
+            "arguments": [],
+            "returns": "Tuple",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetExtentsSize": {
+            "arguments": [],
+            "returns": "Vector3",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetModelCFrame": {
+            "arguments": [],
+            "returns": "CFrame",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "GetModelSize": {
+            "arguments": [],
+            "returns": "Vector3",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "GetPrimaryPartCFrame": {
+            "arguments": [],
+            "returns": "CFrame",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "MakeJoints": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "MoveTo": {
+            "arguments": [
+                "Vector3"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "ResetOrientationToIdentity": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "SetIdentityOrientation": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "SetPrimaryPartCFrame": {
+            "arguments": [
+                "CFrame"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "TranslateBy": {
+            "arguments": [
+                "Vector3"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "breakJoints": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "makeJoints": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "move": {
+            "arguments": [
+                "Vector3"
+            ],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "moveTo": {
+            "arguments": [
+                "Vector3"
+            ],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -369,7 +503,7 @@
         }
     },
     "service": false,
-    "browsable": false,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "Status"
 }

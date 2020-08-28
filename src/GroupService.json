@@ -50,6 +50,42 @@
         }
     },
     "methods": {
+        "GetAlliesAsync": {
+            "arguments": [
+                "int64"
+            ],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetEnemiesAsync": {
+            "arguments": [
+                "int64"
+            ],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetGroupInfoAsync": {
+            "arguments": [
+                "int64"
+            ],
+            "returns": "Variant",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetGroupsAsync": {
+            "arguments": [
+                "int64"
+            ],
+            "returns": "Array",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -368,8 +404,8 @@
             "replicated": true
         }
     },
-    "service": false,
-    "browsable": false,
+    "service": true,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "GroupService"
 }

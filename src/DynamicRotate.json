@@ -1,5 +1,53 @@
 {
     "properties": {
+        "BaseAngle": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "Active": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "bool"
+        },
+        "C0": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "CFrame"
+        },
+        "C1": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "CFrame"
+        },
+        "Enabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "Part0": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "BasePart"
+        },
+        "Part1": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "BasePart"
+        },
+        "part1": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "BasePart"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -369,7 +417,7 @@
         }
     },
     "service": false,
-    "browsable": false,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "DynamicRotate"
 }

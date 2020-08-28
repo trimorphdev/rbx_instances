@@ -50,6 +50,18 @@
         }
     },
     "methods": {
+        "RequestLimitedAsync": {
+            "arguments": [
+                "table",
+                "ThrottlingPriority",
+                "HttpContentType",
+                "HttpRequestType"
+            ],
+            "returns": "string",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -368,8 +380,8 @@
             "replicated": true
         }
     },
-    "service": false,
-    "browsable": false,
+    "service": true,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "HttpRbxApiService"
 }

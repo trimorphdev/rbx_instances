@@ -1,5 +1,29 @@
 {
     "properties": {
+        "Source": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "ProtectedString"
+        },
+        "Disabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "LinkedSource": {
+            "replicated": true,
+            "deprecated": true,
+            "readonly": false,
+            "type": "Content"
+        },
+        "CurrentEditor": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Instance"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +74,13 @@
         }
     },
     "methods": {
+        "GetHash": {
+            "arguments": [],
+            "returns": "string",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -369,7 +400,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "Script"
 }

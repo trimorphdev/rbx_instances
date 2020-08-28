@@ -1,5 +1,89 @@
 {
     "properties": {
+        "ExtraMemoryUsed": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "FreeMemoryMBytes": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "number"
+        },
+        "HttpProxyEnabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "HttpProxyURL": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "string"
+        },
+        "IncommingReplicationLag": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "double"
+        },
+        "PrintFilters": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "PrintJoinSizeBreakdown": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "PrintPhysicsErrors": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "PrintStreamInstanceQuota": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "PrintTouches": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "RenderStreamedRegions": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "ShowActiveAnimationAsset": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "TrackDataTypes": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "TrackPhysicsDetails": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -368,8 +452,8 @@
             "replicated": true
         }
     },
-    "service": false,
+    "service": true,
     "browsable": false,
     "creatable": false,
-    "name": "Instance"
+    "name": "NetworkSettings"
 }

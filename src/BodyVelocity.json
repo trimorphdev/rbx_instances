@@ -1,5 +1,35 @@
 {
     "properties": {
+        "MaxForce": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "P": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "Velocity": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "maxForce": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "velocity": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "Vector3"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +80,20 @@
         }
     },
     "methods": {
+        "GetLastForce": {
+            "arguments": [],
+            "returns": "Vector3",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "lastForce": {
+            "arguments": [],
+            "returns": "Vector3",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -369,7 +413,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "BodyVelocity"
 }

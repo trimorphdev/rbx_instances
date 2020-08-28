@@ -1,5 +1,11 @@
 {
     "properties": {
+        "LocaleId": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "string"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +56,26 @@
         }
     },
     "methods": {
+        "FormatByKey": {
+            "arguments": [
+                "string",
+                "Variant"
+            ],
+            "returns": "string",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "Translate": {
+            "arguments": [
+                "Instance",
+                "string"
+            ],
+            "returns": "string",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -369,7 +395,7 @@
         }
     },
     "service": false,
-    "browsable": false,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "Translator"
 }

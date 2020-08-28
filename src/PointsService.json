@@ -50,6 +50,41 @@
         }
     },
     "methods": {
+        "AwardPoints": {
+            "arguments": [
+                "int64",
+                "number"
+            ],
+            "returns": "Tuple",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "GetAwardablePoints": {
+            "arguments": [],
+            "returns": "number",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "GetGamePointBalance": {
+            "arguments": [
+                "int64"
+            ],
+            "returns": "number",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "GetPointBalance": {
+            "arguments": [
+                "int64"
+            ],
+            "returns": "number",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -310,6 +345,16 @@
         }
     },
     "events": {
+        "PointsAwarded": {
+            "arguments": [
+                "int64",
+                "number",
+                "number",
+                "number"
+            ],
+            "deprecated": true,
+            "replicated": true
+        },
         "AncestryChanged": {
             "arguments": [
                 "Instance",
@@ -368,8 +413,8 @@
             "replicated": true
         }
     },
-    "service": false,
-    "browsable": false,
+    "service": true,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "PointsService"
 }

@@ -1,5 +1,23 @@
 {
     "properties": {
+        "LinkedSource": {
+            "replicated": true,
+            "deprecated": true,
+            "readonly": false,
+            "type": "Content"
+        },
+        "Source": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "ProtectedString"
+        },
+        "CurrentEditor": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Instance"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -369,7 +387,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "ModuleScript"
 }

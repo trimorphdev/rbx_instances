@@ -1,5 +1,77 @@
 {
     "properties": {
+        "HeadColor": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "BrickColor"
+        },
+        "HeadColor3": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Color3"
+        },
+        "LeftArmColor": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "BrickColor"
+        },
+        "LeftArmColor3": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Color3"
+        },
+        "LeftLegColor": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "BrickColor"
+        },
+        "LeftLegColor3": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Color3"
+        },
+        "RightArmColor": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "BrickColor"
+        },
+        "RightArmColor3": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Color3"
+        },
+        "RightLegColor": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "BrickColor"
+        },
+        "RightLegColor3": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Color3"
+        },
+        "TorsoColor": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "BrickColor"
+        },
+        "TorsoColor3": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Color3"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -369,7 +441,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "BodyColors"
 }

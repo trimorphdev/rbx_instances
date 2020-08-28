@@ -1,5 +1,65 @@
 {
     "properties": {
+        "CanBeDropped": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "Enabled": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "Grip": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "CFrame"
+        },
+        "GripForward": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "GripPos": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "GripRight": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "GripUp": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "ManualActivationOnly": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "RequiresHandle": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "ToolTip": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "string"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +110,20 @@
         }
     },
     "methods": {
+        "Activate": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "Deactivate": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -310,6 +384,28 @@
         }
     },
     "events": {
+        "Activated": {
+            "arguments": [],
+            "deprecated": false,
+            "replicated": true
+        },
+        "Deactivated": {
+            "arguments": [],
+            "deprecated": false,
+            "replicated": true
+        },
+        "Equipped": {
+            "arguments": [
+                "Instance"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "Unequipped": {
+            "arguments": [],
+            "deprecated": false,
+            "replicated": true
+        },
         "AncestryChanged": {
             "arguments": [
                 "Instance",
@@ -369,7 +465,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "Tool"
 }

@@ -368,8 +368,8 @@
             "replicated": true
         }
     },
-    "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "service": true,
+    "browsable": true,
+    "creatable": true,
+    "name": "VirtualInputManager"
 }

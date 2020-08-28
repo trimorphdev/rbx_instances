@@ -1,5 +1,41 @@
 {
     "properties": {
+        "AbsolutePosition": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "Vector2"
+        },
+        "AbsoluteRotation": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "number"
+        },
+        "AbsoluteSize": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "Vector2"
+        },
+        "AutoLocalize": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "Localize": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "bool"
+        },
+        "RootLocalizationTable": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "LocalizationTable"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -371,5 +407,5 @@
     "service": false,
     "browsable": false,
     "creatable": false,
-    "name": "Instance"
+    "name": "GuiBase2d"
 }

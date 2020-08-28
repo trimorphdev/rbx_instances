@@ -1,5 +1,11 @@
 {
     "properties": {
+        "PlaybackState": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "PlaybackState"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +56,27 @@
         }
     },
     "methods": {
+        "Cancel": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "Pause": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "Play": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -310,6 +337,13 @@
         }
     },
     "events": {
+        "Completed": {
+            "arguments": [
+                "PlaybackState"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
         "AncestryChanged": {
             "arguments": [
                 "Instance",
@@ -371,5 +405,5 @@
     "service": false,
     "browsable": false,
     "creatable": false,
-    "name": "Instance"
+    "name": "TweenBase"
 }

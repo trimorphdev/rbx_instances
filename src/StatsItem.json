@@ -50,6 +50,20 @@
         }
     },
     "methods": {
+        "GetValue": {
+            "arguments": [],
+            "returns": "double",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetValueString": {
+            "arguments": [],
+            "returns": "string",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -369,7 +383,7 @@
         }
     },
     "service": false,
-    "browsable": false,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "StatsItem"
 }

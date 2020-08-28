@@ -1,5 +1,35 @@
 {
     "properties": {
+        "AttachmentForward": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "AttachmentPoint": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "CFrame"
+        },
+        "AttachmentPos": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "AttachmentRight": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
+        "AttachmentUp": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -369,7 +399,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "Accessory"
 }

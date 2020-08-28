@@ -1,5 +1,65 @@
 {
     "properties": {
+        "BehaviorType": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "DialogBehaviorType"
+        },
+        "ConversationDistance": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "GoodbyeChoiceActive": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "GoodbyeDialog": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "string"
+        },
+        "InUse": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "InitialPrompt": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "string"
+        },
+        "Purpose": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "DialogPurpose"
+        },
+        "Tone": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "DialogTone"
+        },
+        "TriggerDistance": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "TriggerOffset": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Vector3"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +110,13 @@
         }
     },
     "methods": {
+        "GetCurrentPlayers": {
+            "arguments": [],
+            "returns": "Objects",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -310,6 +377,14 @@
         }
     },
     "events": {
+        "DialogChoiceSelected": {
+            "arguments": [
+                "Instance",
+                "Instance"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
         "AncestryChanged": {
             "arguments": [
                 "Instance",
@@ -369,7 +444,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "Dialog"
 }

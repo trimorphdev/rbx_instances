@@ -1,5 +1,71 @@
 {
     "properties": {
+        "AbsoluteCellCount": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "Vector2"
+        },
+        "AbsoluteCellSize": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "Vector2"
+        },
+        "CellPadding": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "UDim2"
+        },
+        "CellSize": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "UDim2"
+        },
+        "FillDirectionMaxCells": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "StartCorner": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "StartCorner"
+        },
+        "AbsoluteContentSize": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "Vector2"
+        },
+        "FillDirection": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "FillDirection"
+        },
+        "HorizontalAlignment": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "HorizontalAlignment"
+        },
+        "SortOrder": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "SortOrder"
+        },
+        "VerticalAlignment": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "VerticalAlignment"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -369,7 +435,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "UIGridLayout"
 }

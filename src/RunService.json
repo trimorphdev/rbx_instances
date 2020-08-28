@@ -50,6 +50,96 @@
         }
     },
     "methods": {
+        "BindToRenderStep": {
+            "arguments": [
+                "string",
+                "number",
+                "Function"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "IsClient": {
+            "arguments": [],
+            "returns": "bool",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "IsEdit": {
+            "arguments": [],
+            "returns": "bool",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "IsRunMode": {
+            "arguments": [],
+            "returns": "bool",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "IsRunning": {
+            "arguments": [],
+            "returns": "bool",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "IsServer": {
+            "arguments": [],
+            "returns": "bool",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "IsStudio": {
+            "arguments": [],
+            "returns": "bool",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "Pause": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "Reset": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "Run": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "Stop": {
+            "arguments": [],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "UnbindFromRenderStep": {
+            "arguments": [
+                "string"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -310,6 +400,28 @@
         }
     },
     "events": {
+        "Heartbeat": {
+            "arguments": [
+                "double"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "RenderStepped": {
+            "arguments": [
+                "double"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "Stepped": {
+            "arguments": [
+                "double",
+                "double"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
         "AncestryChanged": {
             "arguments": [
                 "Instance",
@@ -368,8 +480,8 @@
             "replicated": true
         }
     },
-    "service": false,
-    "browsable": false,
+    "service": true,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "RunService"
 }

@@ -1,5 +1,17 @@
 {
     "properties": {
+        "AllowClientInsertModels": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
+        "AllowInsertFreeModels": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "bool"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +62,130 @@
         }
     },
     "methods": {
+        "ApproveAssetId": {
+            "arguments": [
+                "int64"
+            ],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "ApproveAssetVersionId": {
+            "arguments": [
+                "int64"
+            ],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "GetBaseCategories": {
+            "arguments": [],
+            "returns": "Array",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "GetBaseSets": {
+            "arguments": [],
+            "returns": "Array",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetCollection": {
+            "arguments": [
+                "int64"
+            ],
+            "returns": "Array",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetFreeDecals": {
+            "arguments": [
+                "string",
+                "number"
+            ],
+            "returns": "Array",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetFreeModels": {
+            "arguments": [
+                "string",
+                "number"
+            ],
+            "returns": "Array",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetLatestAssetVersionAsync": {
+            "arguments": [
+                "int64"
+            ],
+            "returns": "int64",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetUserCategories": {
+            "arguments": [
+                "int64"
+            ],
+            "returns": "Array",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "GetUserSets": {
+            "arguments": [
+                "int64"
+            ],
+            "returns": "Array",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "Insert": {
+            "arguments": [
+                "Instance"
+            ],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "LoadAsset": {
+            "arguments": [
+                "int64"
+            ],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "LoadAssetVersion": {
+            "arguments": [
+                "int64"
+            ],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "loadAsset": {
+            "arguments": [
+                "int64"
+            ],
+            "returns": "Instance",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -368,8 +504,8 @@
             "replicated": true
         }
     },
-    "service": false,
-    "browsable": false,
+    "service": true,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "InsertService"
 }

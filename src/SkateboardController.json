@@ -1,5 +1,17 @@
 {
     "properties": {
+        "Steer": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "number"
+        },
+        "Throttle": {
+            "replicated": false,
+            "deprecated": false,
+            "readonly": true,
+            "type": "number"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +62,53 @@
         }
     },
     "methods": {
+        "BindButton": {
+            "arguments": [
+                "Button",
+                "string"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "GetButton": {
+            "arguments": [
+                "Button"
+            ],
+            "returns": "bool",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "UnbindButton": {
+            "arguments": [
+                "Button"
+            ],
+            "returns": "void",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "bindButton": {
+            "arguments": [
+                "Button",
+                "string"
+            ],
+            "returns": "void",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "getButton": {
+            "arguments": [
+                "Button"
+            ],
+            "returns": "bool",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -310,6 +369,20 @@
         }
     },
     "events": {
+        "AxisChanged": {
+            "arguments": [
+                "string"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
+        "ButtonChanged": {
+            "arguments": [
+                "Button"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
         "AncestryChanged": {
             "arguments": [
                 "Instance",
@@ -369,7 +442,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "SkateboardController"
 }

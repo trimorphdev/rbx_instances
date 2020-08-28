@@ -310,6 +310,13 @@
         }
     },
     "events": {
+        "Changed": {
+            "arguments": [
+                "string"
+            ],
+            "deprecated": false,
+            "replicated": true
+        },
         "AncestryChanged": {
             "arguments": [
                 "Instance",
@@ -319,13 +326,6 @@
             "replicated": true
         },
         "AttributeChanged": {
-            "arguments": [
-                "string"
-            ],
-            "deprecated": false,
-            "replicated": true
-        },
-        "Changed": {
             "arguments": [
                 "string"
             ],
@@ -369,7 +369,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "BinaryStringValue"
 }

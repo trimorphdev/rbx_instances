@@ -1,5 +1,11 @@
 {
     "properties": {
+        "EmptyCutoff": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "number"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -50,6 +56,47 @@
         }
     },
     "methods": {
+        "ComputeRawPathAsync": {
+            "arguments": [
+                "Vector3",
+                "Vector3",
+                "number"
+            ],
+            "returns": "Instance",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "ComputeSmoothPathAsync": {
+            "arguments": [
+                "Vector3",
+                "Vector3",
+                "number"
+            ],
+            "returns": "Instance",
+            "deprecated": true,
+            "replicated": true,
+            "yields": false
+        },
+        "CreatePath": {
+            "arguments": [
+                "table"
+            ],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
+        "FindPathAsync": {
+            "arguments": [
+                "Vector3",
+                "Vector3"
+            ],
+            "returns": "Instance",
+            "deprecated": false,
+            "replicated": true,
+            "yields": false
+        },
         "ClearAllChildren": {
             "arguments": [],
             "returns": "void",
@@ -368,8 +415,8 @@
             "replicated": true
         }
     },
-    "service": false,
-    "browsable": false,
+    "service": true,
+    "browsable": true,
     "creatable": false,
-    "name": "Instance"
+    "name": "PathfindingService"
 }

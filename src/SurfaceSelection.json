@@ -1,5 +1,41 @@
 {
     "properties": {
+        "TargetSurface": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "NormalId"
+        },
+        "Adornee": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "BasePart"
+        },
+        "Color": {
+            "replicated": false,
+            "deprecated": true,
+            "readonly": false,
+            "type": "BrickColor"
+        },
+        "Color3": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "Color3"
+        },
+        "Transparency": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "number"
+        },
+        "Visible": {
+            "replicated": true,
+            "deprecated": false,
+            "readonly": false,
+            "type": "bool"
+        },
         "Archivable": {
             "replicated": true,
             "deprecated": false,
@@ -369,7 +405,7 @@
         }
     },
     "service": false,
-    "browsable": false,
-    "creatable": false,
-    "name": "Instance"
+    "browsable": true,
+    "creatable": true,
+    "name": "SurfaceSelection"
 }
